@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'Athletic';
+    src: url("../fuentes/athletic/Athletic.woff2") format('woff2'),
+         url("../fuentes/athletic/Athletic.woff") format('woff'),
+         url("../fuentes/athletic/Athletic.TTF") format('truetype'),
+         url("../fuentes/athletic/Athletic.svg") format('svg');
+}
+*{
+    margin: 0;
+}
+#general{
+    
+}
+header{
+    display: flex;
+    background-color: red;
+}
+nav ul{
+    margin-top: 45px;
+    margin-left: 140px;
+    list-style: none;
+    word-spacing: 255px;
+}
+nav ul > li{
+    position: relative;
+	display: inline-block;
+}
+nav ul li a{
+    color: #353535;
+    text-decoration: none;
+    font-size: 19px;
+    font-family: "Athletic";
+}
+nav li a:hover{
+    color: white;
+    font-weight:  bold;
+    font-size: 21px;
+	transition: all .3s;
+}
+footer{
+    display: flex;
+}
+img.logo{
+    margin: 10px 0px 10px 10px;
+    width: 115px;
+    height: 105px;
+}
+img.redes{
+    width: 130px;
+    height: 50px;
+}
