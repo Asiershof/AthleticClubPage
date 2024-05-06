@@ -55,10 +55,42 @@ article {
     width: 100%;
 }
 
-article img.sanmames {
-    height: 100%;
-    width: 100%;
+.pestanias {
+    display: flex;
+    list-style: none;
+    padding: 0;
+  }
+
+.pestania {
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    border-radius: 5px 5px 0 0;
+    margin-right: 5px;
+  }
+
+.pestania.active {
+    background-color: #fff;
+    border-bottom: 1px solid #fff;
+  }
+
+.contenido {
+    border: 1px solid #ccc;
+    border-radius: 0 5px 5px 5px;
+    padding: 20px;
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
