@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ejercicio 19</title>
+		<meta charset="UTF-8"/>
+	</head>
+	<style>
+		#basicos	{border: solid 1px;
+					width: 350px;
+					margin-bottom: 20px;
+					padding-left: 10px;}
+			
+		#econo	{border: solid 1px;
+				width: 350px;
+				margin-bottom: 20px;
+				padding-left: 10px;}
+	</style>
+	<body>
+		<h1>Información sobre el producto</h1>
+		<form>
+			<div id="basicos">
+				<h3>Datos básicos</h3>
+				<p>
+					<label for="nombre">Nombre</label>
+					<br>
+					<input type=text id="nombre" name="nombre" size="30"/>
+				</p>
+				<p>
+					<label for="descripcion">Descripción</label>
+					<br>
+					<textarea id="descripcion" name="descripcion"></textarea>
+				</p>
+				<p>
+					<label for="foto">Foto</label>
+					<input type=file id="foto" name="foto"/>
+				</p>
+				<p>
+					<input type="checkbox" id="contador" name="contador"/>
+					<label for="contador">Añadir contador de visitas</label>
+				</p>
+			</div>
+			<div id="econo">
+				<h3>Datos económicos</h3>
+				<p>
+					<label for="precio">Precio</label>
+					<input type=text id="precio" name="precio" size="5"/>
+					<label for="precio">€</label>
+					&nbsp;&nbsp;&nbsp;&nbsp;
+					<label for="impuestos">Impuestos</label>
+					<select name ="impuestos">
+						<option value = "4">4%</option>
+						<option value = "7">7%</option>
+						<option value = "16">16%</option>
+						<option value = "25">25%</option>
+					</select>	
+				</p>
+				<p>
+					Promoción<br>
+					<input type=radio id="promoninguno" name="promocion"/>
+					<label for="promoninguno">Ninguno</label>
+					<br>
+					<input type=radio id="promogratuito" name="promocion"/>
+					<label for="promogratuito">Transporte gratuito</label>
+					<br>
+					<input type=radio id="promodescuento" name="promocion"/>
+					<label for="promodescuento">Descuento 5%</label>
+				</p>
+			</div>
+			<input type="reset" value ="Reinicio"/>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<button type="submit">Enviar</button>
+		</form>
+	</body>
+</html>

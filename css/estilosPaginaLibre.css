@@ -82,17 +82,26 @@ footer #info-footer {
     margin: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 50px;
     padding: 45px 0px;
 }
 
-footer #info-footer #redes, #tiempo, #musica {
+footer #info-footer #qr, #redes, #tiempo, #musica {
     margin-left: 10px;
     text-align: center;
 }
 
-footer #info-footer #redes h2 {
+
+footer #info-footer #redes img.codigoQR{
+    width: 120px;
+    height: 120px;
+    margin-right: 20px;
+}
+
+footer #info-footer #redes{
     text-align: center;
+}
+
+footer #info-footer #redes h2 {
     color: #000000;
     margin-bottom: 25px;
     font-size: 30px;
@@ -100,7 +109,7 @@ footer #info-footer #redes h2 {
     letter-spacing: 4px;
 }
 
-footer #info-footer #redes #mapa img.iconos-redes {
+footer #info-footer #redes img.iconos-redes {
     width: 230px;
     height: 60px;
 }
@@ -110,8 +119,7 @@ footer #info-footer #tiempo {
 }
 
 footer #info-footer #musica h2 {
-    margin-bottom: 30px;
-
+    margin-bottom: 40px;
     font-family: "Athletic";
     letter-spacing: 4px;
 }
