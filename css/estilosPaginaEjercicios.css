@@ -17,7 +17,8 @@
 }
 
 header {
-    background-color: red;
+    background-color: black;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
 }
 
 header nav {
@@ -40,13 +41,13 @@ header nav ul li {
 
 header nav ul li a {
     font-size: 19px;
-    color: #000000;
+    color: #FFFFFF;
     text-decoration: none;
     font-family: "Athletic";
 }
 
 header nav li a:hover {
-    color: white;
+    color: #EE2523;
     font-weight: bold;
     font-size: 21px;
 }
@@ -61,6 +62,7 @@ article {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    background-color: #E6E6FA;
 }
 
 #siCSS{
@@ -68,6 +70,7 @@ article {
     display: none;
     align-items: center;
     justify-content: space-evenly;
+    background-color: #E6E6FA;
 }
 
 ul.pestanias {
@@ -78,31 +81,33 @@ ul.pestanias {
   }
 
 .pestania {
-    cursor: pointer;
     padding: 10px 20px;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    border-bottom: none;
-    border-radius: 5px 5px 0 0;
-    margin-right: 5px;
+    border: 2px solid #ccc;
+    border-bottom: 0;
+    margin-right: 2px;
+    background-color: #E6E6FA;
   }
 
 .pestania.active {
-    background-color: #fff;
-    border-bottom: 1px solid #fff;
+    border: 2px solid #2A9DFF;
 }
 
 .contenido {
     width: 100%;
-    border: 1px solid #ccc;
+    border: 2px solid #ccc;
     border-radius: 0 5px 5px 5px;
     padding: 20px;
     box-sizing: border-box;
 }
-
-
-
-
+.ejercicios img{
+    margin-bottom: 8px;
+    height: 150px;
+    width: 150px;
+}
+.ejercicios span{
+    display: block;
+    text-align: center;
+}
 
 
 
@@ -124,7 +129,7 @@ ul.pestanias {
 
 footer {
     width: 100%;
-    background-color: red;
+    background-color: #000000;
 }
 
 footer #info-footer {
@@ -133,54 +138,61 @@ footer #info-footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 45px 0px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
 }
 
-footer #info-footer #qr, #redes, #tiempo, #musica {
+footer #info-footer #qr, #QRredes, #RRSS, #tiempo, #musica {
     margin-left: 10px;
     text-align: center;
 }
 
+footer #info-footer #QRredes{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 
-footer #info-footer #redes img.codigoQR{
+}
+
+footer #info-footer #QRredes img.codigoQR{
     width: 120px;
     height: 120px;
     margin-right: 20px;
 }
 
-footer #info-footer #redes{
-    text-align: center;
+footer #info-footer #QRredes #RRSS{
+    display: flex;
+    flex-direction: column;
 }
 
-footer #info-footer #redes h2 {
-    color: #000000;
-    margin-bottom: 25px;
+footer #info-footer #QRredes #RRSS h2 {
+    color: #FFFFFF;
+    margin-bottom: 20px;
     font-size: 30px;
     font-family: "Athletic";
     letter-spacing: 4px;
 }
 
-footer #info-footer #redes img.iconos-redes {
-    width: 230px;
-    height: 60px;
-}
-
-footer #info-footer #tiempo {
-    margin-top: 20px;
+footer #info-footer #QRredes img.iconos-redes {
+    width: 185px;
+    height: 50px;
 }
 
 footer #info-footer #musica h2 {
-    margin-bottom: 40px;
+    color: #FFFFFF;
+    margin: 40px;
     font-family: "Athletic";
     letter-spacing: 4px;
 }
 
 footer #copy {
-    background-color: #000000;
+    background-color: #FFFFFF;
     padding: 8px;
     text-align: center;
-    color: #fff;
+    color: #000000;
 }
 
 footer #copy p {
     font-size: 20px;
+    font-weight: 600;
 }

@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+#principal{
+    background-color: purple;
+    height: auto;
+    width: 100%;
+    margin: 0 auto 0 auto;
+}
+body{
+    margin: 18px;
+    color: black;
+}
+h1{
+    text-align: center;   
+}
+.enfasis{
+    color:#CC99FF;
+    font-size: x-large;
+}
+#imagen{
+    text-align: center;
+}
+#enlaces{
+    display: block;
+    text-align: center;
+}
+#bizkaia,#gipuzkoa,#araba{
+    display: inline-block;
+    height: 25px;
+    width: 100px;
+    background-color:#00A0F9;
+}
+.parpadea {
+  animation-name: parpadeo;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  -webkit-animation-name:parpadeo;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}
+a.enlace{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+}
+
+a.enlace:hover{
+    background-color: #333;
+}
+@-moz-keyframes parpadeo{  
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes parpadeo {  
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+   100% { opacity: 1.0; }
+}
+
+@keyframes parpadeo {  
+  0% { opacity: 1.0; }
+   50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}

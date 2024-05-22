@@ -16,7 +16,8 @@
 }
 
 header {
-    background-color: red;
+    background-color: black;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
 }
 
 header nav {
@@ -39,28 +40,54 @@ header nav ul li {
 
 header nav ul li a {
     font-size: 19px;
-    color: #000000;
+    color: #FFFFFF;
     text-decoration: none;
     font-family: "Athletic";
 }
 
 header nav li a:hover {
-    color: white;
+    color: #EE2523;
     font-weight: bold;
     font-size: 21px;
 }
 
 article {
-    height: 500px;
     width: 100%;
+    height: auto;
+    display: flex;
 }
 
-article img.sanmames {
+section1{
+    width: 42%;
     height: 100%;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section1 p{
+    margin: 15px 15px 30px 40px;
+    text-align: justify;
+    font-size: 16pt;
 }
 
 
+
+section2{
+    width: 58%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+section2 img#sanmames {
+    height: 405px;
+    width: 830px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
 
 
 
@@ -73,7 +100,7 @@ article img.sanmames {
 
 footer {
     width: 100%;
-    background-color: red;
+    background-color: #000000;
 }
 
 footer #info-footer {
@@ -82,54 +109,61 @@ footer #info-footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 45px 0px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
 }
 
-footer #info-footer #qr, #redes, #tiempo, #musica {
+footer #info-footer #qr, #QRredes, #RRSS, #tiempo, #musica {
     margin-left: 10px;
     text-align: center;
 }
 
+footer #info-footer #QRredes{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 
-footer #info-footer #redes img.codigoQR{
+}
+
+footer #info-footer #QRredes img.codigoQR{
     width: 120px;
     height: 120px;
     margin-right: 20px;
 }
 
-footer #info-footer #redes{
-    text-align: center;
+footer #info-footer #QRredes #RRSS{
+    display: flex;
+    flex-direction: column;
 }
 
-footer #info-footer #redes h2 {
-    color: #000000;
-    margin-bottom: 25px;
+footer #info-footer #QRredes #RRSS h2 {
+    color: #FFFFFF;
+    margin-bottom: 20px;
     font-size: 30px;
     font-family: "Athletic";
     letter-spacing: 4px;
 }
 
-footer #info-footer #redes img.iconos-redes {
-    width: 230px;
-    height: 60px;
-}
-
-footer #info-footer #tiempo {
-    margin-top: 20px;
+footer #info-footer #QRredes img.iconos-redes {
+    width: 185px;
+    height: 50px;
 }
 
 footer #info-footer #musica h2 {
-    margin-bottom: 40px;
+    color: #FFFFFF;
+    margin: 40px;
     font-family: "Athletic";
     letter-spacing: 4px;
 }
 
 footer #copy {
-    background-color: #000000;
+    background-color: #FFFFFF;
     padding: 8px;
     text-align: center;
-    color: #fff;
+    color: #000000;
 }
 
 footer #copy p {
     font-size: 20px;
+    font-weight: 600;
 }

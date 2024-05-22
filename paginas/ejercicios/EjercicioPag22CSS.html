@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ejercicio pag22</title>
+		<meta charset="UTF-8"/>
+    </head>
+	<style>
+        @font-face {
+            font-family: "Dancestep";
+            src: url("../../fuentes/dancestep/danceste.woff") format('woff'),
+                 url("../../fuentes/dancestep/danceste.ttf") format('truetype'),
+                 url("../../fuentes/dancestep/danceste.svg") format('svg');
+        }
+
+		h1{
+            background-image: url("../../imagenes/imagenes ejercicios/Ejercicio pag22/flor.ico");
+			background-size: 40px;
+        }
+		
+		span.amarillo{
+            background-color: yellow;
+        }
+	
+		p.dancestep{
+            font-family: "Dancestep";
+            border: 2px solid black;
+            border-radius: 50px;
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.8);
+        }
+
+		h3{
+            text-shadow: 7px 8px 5px rgb(255, 0, 255);
+        }
+		
+		a.redes{
+            background-color: beige;
+            border: 2px solid black;
+            border-radius: 50px;
+        }
+        
+        a.enlace{
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: black;
+            color: white;
+            border-radius: 20px;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+          }
+
+          a.enlace:hover{
+            background-color: #333;
+          }
+	</style>
+	<body>
+		<header>
+			<h1>TRABAJANDO NUEVOS TAGS Y ATRIBUTOS CSS</h1>
+		</header>
+		<div>
+			<p>La neuva versión del lenguaje HTML es <span class= "amarillo">HTML5</span></p>
+			<p>Usted ha obtenido la nota 8 sobre 10: <meter value="80" min="0" max="100">80%</meter></p>
+			<details>
+				<summary>Haga clic para consultar todos los detalles de la oferta.</summary>
+					<p>¡Hola</p>
+					<p>y adiós!</p>
+			</details>
+			<p>Progresión del proyecto: <progress value="40" max="100"></progress></p>
+            <p>FECHA/HORA:<input type="datetime-local"></p>
+			<p>HORA:<input type="time"></p>
+			<p>Rango: <input type="range" min="0" max="50"></p>
+			<p class="dancestep">ESTO ES UNA PRUEBA DE FUENTE WEB</p>
+			<h3>Esto es un texto con sombra de color fuchsia usando rgb</h3>
+		</div>
+		<footer>
+			<a href="https://www.facebook.com/?locale=es_ES" class="redes">Facebook</a>&nbsp;<a href="https://twitter.com/?lang=es" class="redes">Twitter</a>
+            <p>
+                <a href="../ejercicios.html" class="enlace">Volver a la página anterior</a>
+            </p>
+		</footer>
+	</body>
+</html>

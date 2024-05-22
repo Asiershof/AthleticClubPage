@@ -1,0 +1,48 @@
+@media screen and (max-width : 900px) {
+	#general{
+		height:auto;
+		width:100%;
+		margin:0px;
+		
+	}
+	header{
+		height:15%;
+		width:100%;
+	}
+	#contenido{
+		height:70%;
+		width:100%;
+		display: flex;
+		flex-direction: column;
+	}
+	footer{
+		height:15%;
+		width:100%;
+	}
+}
+@media screen and (min-width : 901px) {
+	#general{
+		height:500px;
+		width:100%;
+		margin:0px;
+	}
+	header{
+		height:15%;
+		width:100%;
+	}
+	#contenido{
+		height:70%;
+		width:100%;
+		display: flex;
+	}
+	#imagen{
+		width:33%;
+	}
+	#lista1, #lista2 {
+		width:33%;
+	}
+	footer{
+		height:15%;
+		width:100%;
+	}
+}
