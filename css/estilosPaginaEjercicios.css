@@ -53,22 +53,23 @@ header nav li a:hover {
 }
 
 article {
-    height: 500px;
     width: 100%;
+    margin: 60px 0px;
 }
 
 #noCSS{
-    width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: #E6E6FA;
 }
 
 #siCSS{
+    display: none;  
+}
+
+.contenido {
     width: 100%;
-    display: none;
-    align-items: center;
+    border: 2px solid #ccc;
+    padding: 20px;
+    box-sizing: border-box;
     justify-content: space-evenly;
     background-color: #E6E6FA;
 }
@@ -92,21 +93,22 @@ ul.pestanias {
     border: 2px solid #2A9DFF;
 }
 
-.contenido {
-    width: 100%;
-    border: 2px solid #ccc;
-    border-radius: 0 5px 5px 5px;
-    padding: 20px;
-    box-sizing: border-box;
+.bloquesEjercicios{
+    margin: 15px 0px;
+    flex: 0 200px;
 }
-.ejercicios img{
-    margin-bottom: 8px;
+
+a.ejercicios img{    
+    margin-bottom: 10px;
     height: 150px;
-    width: 150px;
+    width: 200px;
 }
-.ejercicios span{
+
+a.ejercicios span, p{
+    margin-top: 2px;
     display: block;
-    text-align: center;
+    text-align: left;
+    color: black;
 }
 
 
@@ -195,4 +197,5 @@ footer #copy {
 footer #copy p {
     font-size: 20px;
     font-weight: 600;
+    text-align: center;
 }
