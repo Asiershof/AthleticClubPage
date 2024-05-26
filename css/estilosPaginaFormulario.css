@@ -189,6 +189,14 @@ footer #info-footer #QRredes img.iconos-redes {
     height: 50px;
 }
 
+#ww_026c2187a7920{
+    display: none;
+}
+
+#ww_026c2187a7920 .ww_source svg{
+    display: none;
+}
+
 footer #info-footer #musica h2 {
     color: #FFFFFF;
     margin: 40px;
