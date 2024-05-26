@@ -76,6 +76,7 @@ header nav li a:hover {
 footer {
     width: 100%;
     background-color: #000000;
+    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.6);
 }
 
 footer #info-footer {
@@ -84,7 +85,6 @@ footer #info-footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 45px 0px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
 }
 
 footer #info-footer #qr, #QRredes, #RRSS, #tiempo, #musica {
@@ -141,4 +141,5 @@ footer #copy {
 footer #copy p {
     font-size: 20px;
     font-weight: 600;
+    font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif';
 }
