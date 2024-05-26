@@ -9,6 +9,7 @@
 * {
     margin: 0;
     padding: 0;
+    
 }
 
 #general{
@@ -27,9 +28,20 @@ header nav {
     padding: 10px 5% 10px 2%;
 }
 
+header nav #logo{
+    display: flex;
+    align-items: center;
+}
+
 header nav img.logo {
     height: 120px;
     max-width: 170px;
+}
+
+header nav img.letrasLogo{
+    margin-left: 20px;
+    height: 40px;
+    width: 350px;
 }
 
 header nav ul li {

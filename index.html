@@ -13,7 +13,10 @@
     <div id="general">
         <header>
             <nav>
-                <a href="index.html"><img src="imagenes/logo.png" alt="Atheltic" class="logo"></a>
+                <div id="logo">
+                    <a href="index.html"><img src="imagenes/logo.png" alt="Atheltic" class="logo"></a>
+                    <img src="imagenes/letrasLogo.png" alt="Letras Logo" class="letrasLogo">
+                </div>
                 <ul>
                     <li><a href="index.html">INICIO</a></li>
                     <li><a href="paginas/libre.html">LIBRE</a></li>
@@ -38,7 +41,12 @@
                     <img src="imagenes/qr.png" alt="Código QR" class="codigoQR">
                     <div id="RRSS">
                         <h2>SIGUENOS</h2>
-                        <img src="imagenes/redes.png" alt="Redes Sociales" class="iconos-redes">
+                        <img src="imagenes/redes.png" alt="Redes Sociales" usemap="#Map" class="iconos-redes">
+                        <map name="Map">
+                          <area shape="rect" coords="7,5,51,42" href="https://www.facebook.com/ATHLETICCLUB" target="_blank">
+                          <area shape="rect" coords="70,5,115,43" href="https://www.instagram.com/athleticclub" target="_blank">
+                          <area shape="rect" coords="132,5,175,42" href="https://twitter.com/AthleticClub" target="_blank">
+                        </map>
                     </div>
                 </div>
                 <div id="tiempo">
@@ -46,7 +54,7 @@
                     <script async src="https://app2.weatherwidget.org/js/?id=ww_026c2187a7920"></script>
                 </div>
                 <div id="musica">
-                    <h2>MANITA EN EL PECHO</h2>
+                    <h2>HIMNO OFICIAL</h2>
                     <audio preload="auto" controls="controls" autoplay="autoplay" loop="loop">
                         <source src="audio/Himno.mp3" type="audio/mp3">
                     </audio>
