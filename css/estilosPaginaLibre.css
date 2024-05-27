@@ -65,14 +65,13 @@ header nav li a:hover {
 
 article{
     display: flex;
-    height: 400px;
     flex-direction: column;
     align-items: center;
 }
 
 article h1{
     font-family: "Athletic";
-    font-size: 32pt;
+    font-size: 38pt;
     margin: 40px 0px 10px 0px;
 }
 
@@ -81,6 +80,7 @@ section{
     align-items: center;
     width: 56%;
     height: 210px;
+    margin: 20px 0px;
 }
 
 
@@ -97,8 +97,44 @@ section img:hover{
     filter: contrast(120%);
 }
 
+table.palmares {
+    width: 80%;
+    margin: 20px 0px 60px 0px;
+    border-collapse: collapse;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
 
+table.palmares thead {
+    background-color: #990000;
+    color: white;
+    font-size: 16pt;
+    font-family: Constantia, 'Lucida Bright', 'DejaVu Serif', Georgia, 'serif'
+}
 
+table.palmares tbody tr td.titulos{
+    font-size: 18px;
+    font-weight: 100;
+}
+
+table.palmares tbody tr td.numeros{
+    font-size: 26px;
+}
+
+table.palmares th, table.palmares td {
+    padding: 21px;
+    text-align: left;
+    border: 3px solid #ddd;
+}
+
+table.palmares tbody tr.medio {
+    background-color: #f2f2f2;
+}
+
+table img{
+    width: 30px;
+    height: 38px;
+    margin-left: 15px;
+}
 
 
 
