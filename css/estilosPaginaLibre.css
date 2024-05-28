@@ -75,11 +75,12 @@ article h1{
 section{
     display: flex;
     align-items: center;
-    width: 56%;
+    width: 80%;
     height: 210px;
     margin: 20px 0px;
+    position: relative;
+    z-index: 1;
 }
-
 
 section img{
     width: 0px;
@@ -92,6 +93,15 @@ section img:hover{
     width: 250px;
     opacity: 1;
     filter: contrast(120%);
+}
+
+article hr{
+    height: 2px;
+    background-color: #E2E2E2;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    text-align: center;
+    border: 1px dotted rgba(153, 153, 153, 0.5);
 }
 
 table.palmares {
@@ -110,7 +120,6 @@ table.palmares thead {
 
 table.palmares tbody tr td.titulos{
     font-size: 18px;
-    font-weight: 100;
 }
 
 table.palmares tbody tr td.numeros{
@@ -225,6 +234,7 @@ footer #copy p {
     #hamburguesa{
         display: block;
         margin-right: 30px;
+        z-index: 2;
     }
     
     nav{
@@ -235,7 +245,7 @@ footer #copy p {
     #lista{
         position: absolute;
         top: 144px;
-        background-color: #444444;
+        background-color: #5E5E5E;
         width: 100%;
         left: 0;
         height: 0;
@@ -264,7 +274,7 @@ footer #copy p {
     #lista li a:hover {
         color: #EE2523;
         font-weight: bold;
-        font-size: 4em;
+        font-size: 3.5em;
     }
     
     #checkbox {
@@ -329,7 +339,24 @@ footer #copy p {
       transition-duration: .5s;
       transform: rotate(180deg);
     }     
-        
+    
+    table.palmares thead th{
+        font-size: 10pt;
+        text-align: center;
+    }
+    
+    table.palmares img{
+        margin-left: 4px;
+    }
+    
+    table.palmares tbody tr td.numeros{
+        font-size: 20px;
+    }
+    
+    section{
+        width: 100%;
+    }
+    
     footer #info-footer{
         text-align: center;
     }
@@ -344,6 +371,7 @@ footer #copy p {
     #hamburguesa{
         display: block;
         margin-right: 20px;
+        z-index: 2;
     }
     
     nav{
@@ -354,7 +382,7 @@ footer #copy p {
     #lista{
         position: absolute;
         top: 144px;
-        background-color: #444444;
+        background-color: #5E5E5E;
         width: 100%;
         left: 0;
         height: 0;
@@ -447,7 +475,15 @@ footer #copy p {
     #checkbox:checked + .toggle {
       transition-duration: .5s;
       transform: rotate(180deg);
-    }     
+    }  
+    
+    section{
+        width: 85%;
+    }
+    
+    table img{
+        margin-left: 10px;
+    }
         
     footer #info-footer{
         text-align: center;

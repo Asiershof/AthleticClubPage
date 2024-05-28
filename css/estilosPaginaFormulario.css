@@ -235,7 +235,7 @@ footer #copy p {
     #lista{
         position: absolute;
         top: 144px;
-        background-color: #444444;
+        background-color: #5E5E5E;
         width: 100%;
         left: 0;
         height: 0;
@@ -264,7 +264,7 @@ footer #copy p {
     #lista li a:hover {
         color: #EE2523;
         font-weight: bold;
-        font-size: 4em;
+        font-size: 3.5em;
     }
     
     #checkbox {
@@ -329,7 +329,16 @@ footer #copy p {
       transition-duration: .5s;
       transform: rotate(180deg);
     }     
-        
+    
+    #formulario{
+        max-width: 75%;
+    }
+    
+    #formulario textarea{
+        width: 100%;
+        max-width: 100%;
+    }
+    
     footer #info-footer{
         text-align: center;
     }
@@ -354,7 +363,7 @@ footer #copy p {
     #lista{
         position: absolute;
         top: 144px;
-        background-color: #444444;
+        background-color: #5E5E5E;
         width: 100%;
         left: 0;
         height: 0;
