@@ -253,7 +253,7 @@ footer #copy p {
     }
     
     #checkbox:checked ~ #lista{
-        height: calc(80vh);
+        height: calc(500px);
     }
     
     .toggle {
@@ -371,7 +371,7 @@ footer #copy p {
     }
     
     #checkbox:checked ~ #lista{
-        height: calc(80vh);
+        height: calc(500px);
     }
     
     .toggle {
