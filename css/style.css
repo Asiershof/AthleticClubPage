@@ -113,11 +113,11 @@ footer #info-footer {
     width: 100%;
     margin: auto;
     padding: 45px 0px;
+    text-align: center;
 }
 
 footer #info-footer #QRredes{
     display: flex;
-    text-align: center;
     justify-content: center;
     align-items: center;
     margin-left: 10px;
@@ -147,11 +147,6 @@ footer #info-footer #QRredes img.iconos-redes {
     height: 50px;
 }
 
-footer #info-footer #tiempo{
-    max-width: 100%;
-    min-width: 366px;
-}
-
 #ww_026c2187a7920{
     display: none;
 }
@@ -161,8 +156,7 @@ footer #info-footer #tiempo{
 }
 
 footer #info-footer #musica{
-    margin-left: 10px; 
-    text-align: center;
+    margin-left: 10px;
 }
 
 footer #info-footer #musica h2 {
@@ -185,7 +179,141 @@ footer #copy p {
     font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif';
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 599.5px) {
+    header nav img.letrasLogo{
+        display: none;
+    }
+    
+    #hamburguesa{
+        display: block;
+    }
+    
+    nav{
+        flex-wrap: wrap;
+        position: relative;
+    }
+    
+    #lista{
+        position: absolute;
+        top: var(--alturaHeader);
+        background-color: #444444;
+        width: 100%;
+        left: 0;
+        height: 0;
+        overflow: hidden;
+        transition: height 0.3s ease;
+    }
+    
+    #lista ul{
+        position: absolute;
+        display: flex;
+        width: 100%;
+        margin-top: 30px;
+        flex-direction: column; 
+        text-align: center;
+        gap: 1.5rem;
+    }
+    
+    #lista ul li{
+        display: block;
+    }
+    
+    #lista ul li a{
+        font-size: 3em
+    }
+    
+    #checkbox {
+      display: none;
+    }
+    
+    #checkbox:checked ~ #lista{
+        height: calc(50vh - var(--alturaHeader));
+    }
+    
+    .toggle {
+      position: relative;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      transition-duration: .5s;
+    }
+
+    .bars {
+      width: 100%;
+      height: 4px;
+      background-color: white;
+      border-radius: 4px;
+    }
+
+    #bar2 {
+      transition-duration: .8s;
+    }
+
+    #bar1,#bar3 {
+      width: 70%;
+    }
+
+    #checkbox:checked + .toggle .bars {
+      position: absolute;
+      transition-duration: .5s;
+    }
+
+    #checkbox:checked + .toggle #bar2 {
+      transform: scaleX(0);
+      transition-duration: .5s;
+    }
+
+    #checkbox:checked + .toggle #bar1 {
+      width: 100%;
+      transform: rotate(45deg);
+      transition-duration: .5s;
+    }
+
+    #checkbox:checked + .toggle #bar3 {
+      width: 100%;
+      transform: rotate(-45deg);
+      transition-duration: .5s;
+    }
+
+    #checkbox:checked + .toggle {
+      transition-duration: .5s;
+      transform: rotate(180deg);
+    }     
+    
+    article{
+        flex-direction: column
+    }
+    
+    article section1{
+        width: 100%;
+    }
+    
+    article section1 p{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    
+    article section2{
+        width: 100%;
+        margin: 0;
+    }
+    
+    footer #info-footer{
+        text-align: center;
+    }
+    
+    footer #QRredes{
+        margin-bottom: 30px;
+    }
+    
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
     #hamburguesa{
         display: block;
     }
