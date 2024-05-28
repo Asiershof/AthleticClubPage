@@ -180,12 +180,17 @@ footer #copy p {
 }
 
 @media (max-width: 599.5px) {
+    header nav #logo{
+        margin-left: 20px;
+    }
+    
     header nav img.letrasLogo{
         display: none;
     }
     
     #hamburguesa{
         display: block;
+        margin-right: 30px;
     }
     
     nav{
@@ -208,10 +213,10 @@ footer #copy p {
         position: absolute;
         display: flex;
         width: 100%;
-        margin-top: 30px;
+        margin-top: 50px;
         flex-direction: column; 
         text-align: center;
-        gap: 1.5rem;
+        gap: 3rem;
     }
     
     #lista ul li{
@@ -232,14 +237,14 @@ footer #copy p {
     
     .toggle {
       position: relative;
-      width: 40px;
+      width: 60px;
       height: 40px;
       cursor: pointer;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      gap: 10px;
+      gap: 13px;
       transition-duration: .5s;
     }
 
@@ -255,7 +260,7 @@ footer #copy p {
     }
 
     #bar1,#bar3 {
-      width: 70%;
+      width: 90%;
     }
 
     #checkbox:checked + .toggle .bars {
@@ -338,10 +343,10 @@ footer #copy p {
         position: absolute;
         display: flex;
         width: 100%;
-        margin-top: 30px;
+        margin-top: 50px;
         flex-direction: column; 
         text-align: center;
-        gap: 1.5rem;
+        gap: 3rem;
     }
     
     #lista ul li{
@@ -362,14 +367,14 @@ footer #copy p {
     
     .toggle {
       position: relative;
-      width: 40px;
+      width: 60px;
       height: 40px;
       cursor: pointer;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      gap: 10px;
+      gap: 13px;
       transition-duration: .5s;
     }
 
@@ -385,7 +390,7 @@ footer #copy p {
     }
 
     #bar1,#bar3 {
-      width: 70%;
+      width: 90%;
     }
 
     #checkbox:checked + .toggle .bars {
