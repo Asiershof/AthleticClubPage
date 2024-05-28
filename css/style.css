@@ -6,10 +6,6 @@
         url("../fuentes/athletic/Athletic.svg") format('svg');
 }
 
-:root{
-    --alturaHeader: 144px;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -23,7 +19,7 @@
 header {
     background-color: black;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
-    height: var(--alturaHeader);
+    height: 144px;
 }
 
 header nav {
@@ -200,7 +196,7 @@ footer #copy p {
     
     #lista{
         position: absolute;
-        top: var(--alturaHeader);
+        top: 144px;
         background-color: #444444;
         width: 100%;
         left: 0;
@@ -227,12 +223,18 @@ footer #copy p {
         font-size: 3em
     }
     
+    #lista li a:hover {
+        color: #EE2523;
+        font-weight: bold;
+        font-size: 4em;
+    }
+    
     #checkbox {
       display: none;
     }
     
     #checkbox:checked ~ #lista{
-        height: calc(50vh - var(--alturaHeader));
+        height: calc(80vh);
     }
     
     .toggle {
@@ -330,7 +332,7 @@ footer #copy p {
     
     #lista{
         position: absolute;
-        top: var(--alturaHeader);
+        top: 144px;
         background-color: #444444;
         width: 100%;
         left: 0;
@@ -357,12 +359,18 @@ footer #copy p {
         font-size: 3em
     }
     
+    #lista li a:hover {
+        color: #EE2523;
+        font-weight: bold;
+        font-size: 4em;
+    }
+    
     #checkbox {
       display: none;
     }
     
     #checkbox:checked ~ #lista{
-        height: calc(50vh - var(--alturaHeader));
+        height: calc(80vh);
     }
     
     .toggle {
