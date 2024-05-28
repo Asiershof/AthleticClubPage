@@ -63,6 +63,7 @@ article{
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 article h1{
@@ -174,6 +175,10 @@ footer #info-footer #QRredes #RRSS h2 {
 footer #info-footer #QRredes img.iconos-redes {
     width: 185px;
     height: 50px;
+}
+
+footer #info-footer #tiempo{
+    width: 100%;
 }
 
 #ww_026c2187a7920{
@@ -338,6 +343,7 @@ footer #copy p {
 @media (min-width: 600px) and (max-width: 1024px) {
     #hamburguesa{
         display: block;
+        margin-right: 20px;
     }
     
     nav{
@@ -466,5 +472,9 @@ footer #copy p {
     footer #info-footer {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+    }
+    
+    #ww_026c2187a7920 .ww-box{
+        width: clamp(360px, 35vw, 410px);
     }
 }

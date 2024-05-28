@@ -143,6 +143,11 @@ footer #info-footer #QRredes img.iconos-redes {
     height: 50px;
 }
 
+footer #info-footer #tiempo{
+    width: 100%;
+}
+
+
 #ww_026c2187a7920{
     display: none;
 }
@@ -318,11 +323,18 @@ footer #copy p {
         margin-bottom: 30px;
     }
     
+    footer #info-footer #musica{
+        margin: 0px;
+    }
+    #ww_026c2187a7920 .ww-box {
+        width: 100%;
+    }
 }
 
 @media (min-width: 600px) and (max-width: 1024px) {
     #hamburguesa{
         display: block;
+        margin-right: 20px;
     }
     
     nav{
@@ -469,6 +481,10 @@ footer #copy p {
     footer #info-footer {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+    }
+    
+    #ww_026c2187a7920 .ww-box{
+        width: clamp(360px, 35vw, 410px);
     }
 }
 
