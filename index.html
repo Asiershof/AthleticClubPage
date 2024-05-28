@@ -1,14 +1,12 @@
 <!doctype html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <title>Proyecto DAW1: Asier Crespo</title>
     <link href="css/style.css" rel="stylesheet" type="text/css"/>
     <link rel="shortcut icon" href="imagenes/iconoPagina.ico" />
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-
 <body>
     <div id="general">
         <header>
@@ -17,12 +15,23 @@
                     <a href="index.html"><img src="imagenes/logo.png" alt="Atheltic" class="logo"></a>
                     <img src="imagenes/letrasLogo.png" alt="Letras Logo" class="letrasLogo">
                 </div>
-                <ul>
-                    <li><a href="index.html">INICIO</a></li>
-                    <li><a href="paginas/historia.html">HISTORIA</a></li>
-                    <li><a href="paginas/formulario.html">HAZTE SOCIO</a></li>
-                    <li><a href="paginas/ejercicios.html">EJERCICIOS</a></li>
-                </ul>
+                <div id="hamburguesa">
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox" class="toggle">
+                        <div class="bars" id="bar1"></div>
+                        <div class="bars" id="bar2"></div>
+                        <div class="bars" id="bar3"></div>
+                    </label>
+                    <div id="lista">
+                        <ul class="listaUl">
+                            <li ><a href="index.html">INICIO</a></li>
+                            <li><a href="paginas/historia.html">HISTORIA</a></li>
+                            <li><a href="paginas/formulario.html">HAZTE SOCIO</a></li>
+                            <li><a href="paginas/ejercicios.html">EJERCICIOS</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
             </nav>
         </header>
         <article>
