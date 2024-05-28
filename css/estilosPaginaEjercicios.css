@@ -442,7 +442,16 @@ footer #copy p {
       transition-duration: .5s;
       transform: rotate(180deg);
     }     
-        
+      
+    #noCSS, #siCSS{
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    a.ejercicios span{
+        text-align: center;
+    }
+    
     footer #info-footer{
         text-align: center;
     }
