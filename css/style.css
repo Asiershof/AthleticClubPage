@@ -57,46 +57,7 @@ header nav img.letrasLogo{
     color: #FFFFFF;
     text-decoration: none;
     font-family: "Athletic";
-}
-
-article {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-section1{
-    width: 42%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-section1 p{
-    margin: 0 15px 30px 40px;
-    text-align: justify;
-    font-size: 16pt;
-}
-
-section1 p.primero{
-    margin-top: 40px;
-}
-
-section2{
-    width: 58%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0px;
-}
-
-section2 img#sanmames {
-    margin: 20px 0px;
-    width: 90%;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
-    border-radius: 10px;
+    transition: 0.2s;
 }
 
 footer {
@@ -321,13 +282,6 @@ footer #copy p {
     
     footer #QRredes{
         margin-bottom: 30px;
-    }
-    
-    footer #info-footer #musica{
-        margin: 0px;
-    }
-    #ww_026c2187a7920 .ww-box {
-        width: 100%;
     }
 }
 

@@ -57,89 +57,7 @@ header nav img.letrasLogo{
     color: #FFFFFF;
     text-decoration: none;
     font-family: "Athletic";
-}
-
-article{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-article h1{
-    font-family: "Athletic";
-    font-size: 38pt;
-    margin: 40px 0px 10px 0px;
-}
-
-section{
-    display: flex;
-    align-items: center;
-    width: 80%;
-    height: 210px;
-    margin: 20px 0px;
-    position: relative;
-    z-index: 1;
-}
-
-section img{
-    width: 0px;
-    flex-grow: 1;
-    opacity: 0.8;
-    transition: .5s ease;
-}
-
-section img:hover{
-    width: 250px;
-    opacity: 1;
-    filter: contrast(120%);
-}
-
-article hr{
-    height: 2px;
-    background-color: #E2E2E2;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    width: 90%;
-    text-align: center;
-    border: 1px dotted rgba(153, 153, 153, 0.5);
-}
-
-table.palmares {
-    width: 80%;
-    margin: 20px 0px 60px 0px;
-    border-collapse: collapse;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-table.palmares thead {
-    background-color: #990000;
-    color: white;
-    font-size: 16pt;
-    font-family: Constantia, 'Lucida Bright', 'DejaVu Serif', Georgia, 'serif'
-}
-
-table.palmares tbody tr td.titulos{
-    font-size: 18px;
-}
-
-table.palmares tbody tr td.numeros{
-    font-size: 26px;
-}
-
-table.palmares th, table.palmares td {
-    padding: 21px;
-    text-align: left;
-    border: 3px solid #ddd;
-}
-
-table.palmares tbody tr.medio {
-    background-color: #f2f2f2;
-}
-
-table img{
-    width: 30px;
-    height: 38px;
-    margin-left: 15px;
+    transition: 0.2s;
 }
 
 footer {
@@ -354,7 +272,19 @@ footer #copy p {
     }
     
     section{
-        width: 100%;
+        width: 80%;
+        flex-direction: column;
+        height: auto;
+    }
+    
+    section img{
+        width: auto;
+        height: 80px;
+    }
+    
+    section img:hover{
+        width: 120%;
+        height: auto;
     }
     
     footer #info-footer{

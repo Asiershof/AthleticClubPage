@@ -7,6 +7,81 @@
     <link href="../css/estilosPaginaFormulario.css" rel="stylesheet" type="text/css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="../js/scriptFormulario.js" defer></script>
+    <style>
+        article{
+            width: 100%;
+        }
+
+        article h1{
+            display: block;
+            margin-top: 40px;
+            font-family: "Athletic";
+            font-size: 35pt;
+            text-align: center;
+        }
+
+        #contenedorformulario{
+            width: 100%;
+            margin: 30px 0px 50px 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
+
+        #formulario{
+            background-color: #BBBBBB;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+            max-width: 100%;
+            font-size: 13pt;
+        }
+
+        #formulario input{
+            margin-left: 10px;
+        }
+
+        #formulario textarea{
+            margin-top: 10px;
+            resize: none;
+        }
+
+        #formulario input[type="submit"], input[type="reset"] {
+            border-radius: 5px;
+            padding: 8px 14px;
+            font-size: 16px;
+            margin: 0;
+        }
+        #formulario input[type="submit"]:hover, input[type="reset"]:hover{
+            background-color:#ABABAB;
+        }
+
+        .mensaje {
+            display: block;
+            margin-bottom: 30px;
+            padding: 8px;
+            background-color: #FD0000;
+            border: 1px solid black;
+            border-radius: 5px;
+            color: black;
+            font-size: 20pt;
+            font-weight: bold;
+            font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif';
+            width: 40%;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out; 
+            position: absolute;
+            z-index: 10;
+        }
+
+        .mensaje.show {
+            width: 40%;
+            justify-content: center;
+            opacity: 1;
+        }
+    </style>
 </head>
 
 <body>
@@ -40,28 +115,28 @@
             <div id="contenedorformulario">
                 <div id="formulario">
                     <form action="/submit" method="post">
-                        <label for="nombre">Nombre: </label>
-                        <input type="text" id="nombre" name="nombre"><br>
+                        <label for="nombre" class="labelBloqueMovil">Nombre: </label>
+                        <input type="text" id="nombre" name="nombre" class="margenInputMovil"><br>
                         <br>
-                        <label for="apellido">Apellido: </label>
-                        <input type="text" id="apellido" name="apellido"><br>
+                        <label for="apellido" class="labelBloqueMovil">Apellido: </label>
+                        <input type="text" id="apellido" name="apellido" class="margenInputMovil"><br>
                         <br>
-                        <label for="email">Email: </label>
-                        <input type="email" id="email" name="email"><br>
+                        <label for="email" class="labelBloqueMovil">Email: </label>
+                        <input type="email" id="email" name="email" class="margenInputMovil"><br>
                         <br>
-                        <label for="telefono">Teléfono: </label>
-                        <input type="tel" id="telefono" name="telefono"><br>
+                        <label for="telefono" class="labelBloqueMovil">Teléfono: </label>
+                        <input type="tel" id="telefono" name="telefono" class="margenInputMovil"><br>
                         <br>
                         <label>Sexo:</label><br>
-                        <label><input type="radio" name="sexo" value="masculino"> Masculino</label><br>
-                        <label><input type="radio" name="sexo" value="femenino"> Femenino</label><br>
-                        <label><input type="radio" name="sexo" value="otro"> Otro</label><br>
+                        <label><input name="sexo" type="radio" class="margenInputMovil" value="masculino"> Masculino</label><br>
+                        <label><input name="sexo" type="radio" class="margenInputMovil" value="femenino"> Femenino</label><br>
+                        <label><input name="sexo" type="radio" class="margenInputMovil" value="otro"> Otro</label><br>
                         <br>
                         <label>¿Cómo nos ha conocido?</label><br>
-                        <label><input type="checkbox" name="conocido" value="amigo"> Un amigo</label><br>
-                        <label><input type="checkbox" name="conocido" value="redes"> Redes sociales</label><br>
-                        <label><input type="checkbox" name="conocido" value="googleando"> Googleando</label><br>
-                        <label><input type="checkbox" name="conocido" value="otros"> Otros</label><br>
+                        <label><input name="conocido" type="checkbox" class="margenInputMovil" value="amigo"> Un amigo</label><br>
+                        <label><input name="conocido" type="checkbox" class="margenInputMovil" value="redes"> Redes sociales</label><br>
+                        <label><input name="conocido" type="checkbox" class="margenInputMovil" value="googleando"> Googleando</label><br>
+                        <label><input name="conocido" type="checkbox" class="margenInputMovil" value="otros"> Otros</label><br>
                         
                         <br>
                         <label for="mensaje">Dinos que opinas sobre el Athletic:</label><br>
@@ -96,7 +171,7 @@
                 </div>
                 <div id="musica">
                     <h2>HIMNO OFICIAL</h2>
-                    <audio preload="auto" controls="controls" autoplay="autoplay" loop="loop">
+                    <audio preload="auto" controls="controls" loop="loop">
                         <source src="../audio/Himno.mp3" type="audio/mp3">
                     </audio>
                 </div>

@@ -3,10 +3,67 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Ejercicios</title>
+    <title>Repaso Ejercicios</title>
     <link href="../css/estilosPaginaEjercicios.css" rel="stylesheet" type="text/css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="../js/scriptEjercicios.js"></script>
+    <style>
+        article {
+            width: 100%;
+            margin: 60px 0px 80px 0px;
+        }
+
+        #noCSS{
+            display: flex;
+        }
+
+        #siCSS{
+            display: none;  
+        }
+
+        .contenido {
+            width: 100%;
+            border: 2px solid #ccc;
+            padding: 20px;
+            box-sizing: border-box;
+            justify-content: space-evenly;
+            background-color: #E6E6FA;
+        }
+
+        ul.pestanias {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin-top: 15px;
+          }
+
+        .pestania {
+            padding: 10px 20px;
+            border: 2px solid #ccc;
+            border-bottom: 0;
+            margin-right: 2px;
+            background-color: #E6E6FA;
+          }
+
+        .pestania.active {
+            border: 2px solid #2A9DFF;
+        }
+
+        .bloquesEjercicios{
+            margin: 15px 0px;
+            flex: 0 200px;
+            text-align: left;
+        }
+
+        a.ejercicios img{    
+            margin-bottom: 10px;
+        }
+
+        .tituloEjercicios{
+            text-decoration: underline;
+            font-weight: 100;
+        }
+    </style>
 </head>
 
 <body>
@@ -43,40 +100,47 @@
             
             <div id="noCSS" class="contenido">
                 <div class="bloquesEjercicios" id="ej1noCSS">
-                    <a href="ejercicios/EjercicioSinCSS1.html" class="ejercicios"><img src="../imagenes/capturas ejercicios/EjercicioSinCSS1.png"  alt="EjercicioSinCSS1"><span>Lista anidada de animales</span>
-                    </a>
-                    <p>Ejercicio de una lista de animales</p>
+                    <a href="ejercicios/EjercicioSinCSS1.html" class="ejercicios"><img src="../imagenes/capturas ejercicios/EjercicioSinCSS1.png"  alt="EjercicioSinCSS1"></a>
+                    <h4 class="tituloEjercicios">Lista anidada de animales</h4>
+                    <p class="parrafoEjercicios">Ejercicio de una lista de animales</p>
                 </div>
                 <div class="bloquesEjercicios" id="ej2noCSS">
-                    <a href="ejercicios/EjercicioSinCSS2.html" class="ejercicios"><img src="../imagenes/capturas ejercicios/EjercicioSinCSS2.png" alt="EjercicioSinCSS2"><span>Lista anidada de destinos</span></a>
-                    <p>Ejercicio de lista de mis destinos favoritos</p>
+                    <a href="ejercicios/EjercicioSinCSS2.html" class="ejercicios"><img src="../imagenes/capturas ejercicios/EjercicioSinCSS2.png" alt="EjercicioSinCSS2"></a>
+                    <h4 class="tituloEjercicios">Lista anidada de destinos</h4>
+                    <p class="parrafoEjercicios">Ejercicio de lista de mis destinos favoritos</p>
                 </div>
                 <div class="bloquesEjercicios" id="ej3noCSS">
-                    <a href="ejercicios/EjercicioSinCSS3.html" class="ejercicios"><img src="../imagenes/capturas ejercicios/EjercicioSinCSS3.png" alt="EjercicioSinCSS3"><span>Mapa partidos políticos</span></a>
-                  <p>Ejercicio de un mapa de partidos políticos y una página extra</p>
+                    <a href="ejercicios/EjercicioSinCSS3.html" class="ejercicios"><img src="../imagenes/capturas ejercicios/EjercicioSinCSS3.png" alt="EjercicioSinCSS3"></a>
+                    <h4 class="tituloEjercicios">Mapa partidos políticos</h4>
+                  <p class="parrafoEjercicios">Ejercicio de un mapa de partidos políticos y una página extra</p>
                 </div>
                 <div class="bloquesEjercicios" id="ej4noCSS">
-                    <a href="ejercicios/EjercicioSinCSS4.html" class="ejercicios"><img src="../imagenes/capturas ejercicios/EjercicioSinCSS4.png" alt="EjercicioSinCSS4"><span>Formulario sobre producto</span></a>
-                  <p>Ejercicio de un formulario sobre un producto</p>
+                    <a href="ejercicios/EjercicioSinCSS4.html" class="ejercicios"><img src="../imagenes/capturas ejercicios/EjercicioSinCSS4.png" alt="EjercicioSinCSS4"></a>
+                    <h4 class="tituloEjercicios">Formulario sobre producto</h4>
+                  <p class="parrafoEjercicios">Ejercicio de un formulario sobre un producto</p>
                 </div>
             </div>
 
             <div id="siCSS" class="contenido">
                 <div class="bloquesEjercicios" id="ej1siCSS">
-                    <a href="ejercicios/EjercicioConCSS1.html" class="ejercicios"><img src="../imagenes/capturas ejercicios/EjercicioConCSS1.png" alt="EjercicioConCSS1"><span>Varios tags HTML5 CSS3</span></a>
-                    <p>Ejercicio sobre varios nuevos tags de HTML5 y CSS3</p>
+                    <a href="ejercicios/EjercicioConCSS1.html" class="ejercicios"><img src="../imagenes/capturas ejercicios/EjercicioConCSS1.png" alt="EjercicioConCSS1"></a>
+                    <h4 class="tituloEjercicios">Varios tags HTML5 CSS3</h4>
+                    <p class="parrafoEjercicios">Ejercicio sobre varios nuevos tags de HTML5 y CSS3</p>
                 </div>
                 <div class="bloquesEjercicios" id="ej2siCSS">
-                    <a href="ejercicios/EjercicioConCSS2.html" class="ejercicios"><img src="../imagenes/capturas ejercicios/EjercicioConCSS2.png" alt="EjercicioConCSS2"><span>Bilbao mujeres</span></a>
-                  <p>Ejercicio responsive sobre una campaña de feminista en Bilbao</p>
+                    <a href="ejercicios/EjercicioConCSS2.html" class="ejercicios"><img src="../imagenes/capturas ejercicios/EjercicioConCSS2.png" alt="EjercicioConCSS2"></a>
+                    <h4 class="tituloEjercicios">Bilbao mujeres</h4>
+                  <p class="parrafoEjercicios">Ejercicio responsive sobre una campaña de feminista en Bilbao</p>
                 </div>
                 <div class="bloquesEjercicios" id="ej3siCSS">
-                    <a href="ejercicios/EjercicioConCSS3.html" class="ejercicios"><img src="../imagenes/capturas ejercicios/EjercicioConCSS3.png" alt="EjercicioConCSS3"><span>Visite Euskadi</span></a>
-                  <p>Ejercicio de un mapa de Euskadi con varias páginas e imagenes de sustitución</p>
+                    <a href="ejercicios/EjercicioConCSS3.html" class="ejercicios"><img src="../imagenes/capturas ejercicios/EjercicioConCSS3.png" alt="EjercicioConCSS3"></a>
+                    <h4 class="tituloEjercicios">Visite Euskadi</h4>
+                  <p class="parrafoEjercicios">Ejercicio de un mapa de Euskadi con varias páginas e imagenes de sustitución</p>
                 </div>
                 <div class="bloquesEjercicios" id="ej4siCSS">
-                    <a href="ejercicios/EjercicioConCSS4.html" class="ejercicios"><img src="../imagenes/capturas ejercicios/EjercicioConCSS4.png" alt="EjercicioConCSS4"><span>Bouquet de flores</span></a>
-                  <p>Ejercicio de una tabla con cambio de la imagen central</p>
+                    <a href="ejercicios/EjercicioConCSS4.html" class="ejercicios"><img src="../imagenes/capturas ejercicios/EjercicioConCSS4.png" alt="EjercicioConCSS4"></a>
+                    <h4 class="tituloEjercicios">Bouquet de flores</h4>
+                  <p class="parrafoEjercicios">Ejercicio de una tabla con cambio de la imagen central</p>
                 </div>
             </div>
         </article>
@@ -100,7 +164,7 @@
                 </div>
                 <div id="musica">
                     <h2>HIMNO OFICIAL</h2>
-                    <audio preload="auto" controls="controls" autoplay="autoplay" loop="loop">
+                    <audio preload="auto" controls="controls" loop="loop">
                         <source src="../audio/Himno.mp3" type="audio/mp3">
                     </audio>
                 </div>
