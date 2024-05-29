@@ -58,6 +58,7 @@ header nav img.letrasLogo{
     text-decoration: none;
     font-family: "Athletic";
     transition: 0.2s;
+    font-weight: 100;
 }
 
 footer {
@@ -97,11 +98,11 @@ footer #info-footer #QRredes #RRSS h2 {
     font-size: 30px;
     font-family: "Athletic";
     letter-spacing: 4px;
+    font-weight: 100;
 }
 
 footer #info-footer #QRredes img.iconos-redes {
     width: 185px;
-    height: 50px;
 }
 
 footer #info-footer #tiempo{
@@ -125,6 +126,7 @@ footer #info-footer #musica h2 {
     margin: 40px;
     font-family: "Athletic";
     letter-spacing: 4px;
+    font-weight: 100;
 }
 
 footer #copy {
@@ -273,17 +275,17 @@ footer #copy p {
     
     section{
         width: 80%;
+        height: auto;
         flex-direction: column;
         height: auto;
     }
     
     section img{
-        width: auto;
         height: 80px;
     }
     
     section img:hover{
-        width: 120%;
+        width: 100%;
         height: auto;
     }
     
@@ -409,6 +411,15 @@ footer #copy p {
     
     section{
         width: 85%;
+        height: 210px;
+    }
+    
+    section img{
+        width: 0px;
+    }
+    
+    section img:hover{
+            width: 250px;
     }
     
     table img{
@@ -433,6 +444,18 @@ footer #copy p {
 
     #hamburguesa input, #hamburguesa label{
         display: none;
+    }
+    
+    section{
+        height: 210px;
+    }
+    
+    section img{
+        width: 0px;
+    }
+    
+    section img:hover{
+            width: 250px;
     }
 
     footer #info-footer {
