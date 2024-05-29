@@ -276,8 +276,10 @@ footer #copy p {
         max-width: 100%;
     }
     
-    .mensaje.show{
+    .mensaje, .mensaje.show{
         width: 80%;
+        margin-top: 90px;
+        margin-bottom: 0px;
     }
     
     footer #info-footer{
@@ -397,7 +399,13 @@ footer #copy p {
     #checkbox:checked + .toggle {
       transition-duration: .5s;
       transform: rotate(180deg);
-    }     
+    } 
+    
+    .mensaje, .mensaje.show {
+        width: 40%;
+        margin-bottom: 30px;
+    }
+    
         
     footer #info-footer{
         text-align: center;
@@ -417,6 +425,11 @@ footer #copy p {
 
     #hamburguesa input, #hamburguesa label{
         display: none;
+    }
+    
+    .mensaje, .mensaje.show {
+        width: 40%;
+        margin-bottom: 30px;
     }
 
     footer #info-footer {
