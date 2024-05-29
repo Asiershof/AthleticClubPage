@@ -259,8 +259,12 @@ footer #copy p {
       transform: rotate(180deg);
     }     
         
-    #noCSS, #siCSS{
+    .contenido{
         flex-direction: column;
+        text-align: center;
+    }
+    
+    .bloquesEjercicios{
         text-align: center;
     }
     
@@ -272,10 +276,6 @@ footer #copy p {
     
     footer #info-footer{
         text-align: center;
-    }
-    
-    #noCSS p, #siCSS p{
-        width: 60%;
     }
     
     footer #QRredes{
@@ -393,7 +393,7 @@ footer #copy p {
       transform: rotate(180deg);
     }     
       
-    #noCSS, #siCSS{
+    .contenido{
         text-align: center;
     }
     
@@ -405,6 +405,7 @@ footer #copy p {
     
     .bloquesEjercicios{
         min-width: 20%;
+        text-align: left;
         transition: width 0.5s ease;
     }
     
@@ -430,6 +431,10 @@ footer #copy p {
 
     #hamburguesa input, #hamburguesa label{
         display: none;
+    }
+    
+    .bloquesEjercicios{
+        text-align: left;
     }
     
     a.ejercicios img{
