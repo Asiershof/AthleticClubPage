@@ -143,7 +143,7 @@ footer #copy p {
     font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif';
 }
 
-@media (max-width: 599.5px) {
+@media (max-width: 600px) {
     header nav #logo{
         margin-left: 20px;
     }
@@ -170,7 +170,6 @@ footer #copy p {
         left: 0;
         height: 0;
         overflow: hidden;
-        transition: height 0.3s ease;
     }
     
     #lista ul{
@@ -181,6 +180,7 @@ footer #copy p {
         flex-direction: column; 
         text-align: center;
         gap: 3rem;
+        transition: 0.3s ease;
     }
     
     #lista ul li{
@@ -273,6 +273,14 @@ footer #copy p {
         margin-right: 15px;
     }
     
+    p.parrafoMovil{
+        display: block;
+    }
+    
+    p.parrafoOrdenador{
+        display: none;
+    }
+    
     article section2{
         width: 100%;
         margin: 0;
@@ -306,7 +314,7 @@ footer #copy p {
         left: 0;
         height: 0;
         overflow: hidden;
-        transition: height 0.3s ease;
+        transition: 0.3s ease;
     }
     
     #lista ul{
@@ -408,6 +416,14 @@ footer #copy p {
         margin-right: 40px;
     }
     
+    p.parrafoMovil{
+        display: block;
+    }
+    
+    p.parrafoOrdenador{
+        display: none;
+    }
+    
     article section2{
         width: 100%;
         margin: 0;
@@ -423,7 +439,7 @@ footer #copy p {
     
 }
 
-@media (min-width: 1024.5px) {
+@media (min-width: 1024px) {
     #lista li a:hover {
         color: #EE2523;
         font-weight: bold;
@@ -432,6 +448,14 @@ footer #copy p {
 
     #hamburguesa input, #hamburguesa label{
         display: none;
+    }
+    
+    p.parrafoMovil{
+        display: none;
+    }
+    
+    p.parrafoOrdenador{
+        display: block;
     }
 
     footer #info-footer {

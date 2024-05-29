@@ -142,7 +142,7 @@ footer #copy p {
     font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif';
 }
 
-@media (max-width: 599.5px) {
+@media (max-width: 600px) {
     header nav #logo{
         margin-left: 20px;
     }
@@ -435,7 +435,7 @@ footer #copy p {
     }
 }
 
-@media (min-width: 1024.5px) {
+@media (min-width: 1024px) {
     #lista li a:hover {
         color: #EE2523;
         font-weight: bold;

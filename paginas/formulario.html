@@ -20,7 +20,6 @@
             font-size: 35pt;
             text-align: center;
             font-weight: 100;
-            color: white;
         }
 
         #contenedorformulario{
@@ -33,7 +32,8 @@
         }
 
         #formulario{
-            background-color: #BBBBBB;
+            background-image: url("../imagenes/fondoFormulario.jpg");
+            background-size: cover; 
             padding: 40px;
             border-radius: 10px;
             box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
@@ -116,27 +116,24 @@
                 <div id="formulario">
                     <form action="/submit" method="post">
                         <label for="nombre" class="labelBloqueMovil">Nombre: </label>
-                        <input type="text" id="nombre" name="nombre" class="margenInputMovil"><br>
+                        <input type="text" id="nombre" name="nombre" class="margenInputMovil" required><br>
                         <br>
-                        <label for="apellido" class="labelBloqueMovil">Apellido: </label>
-                        <input type="text" id="apellido" name="apellido" class="margenInputMovil"><br>
+                        <label for="apellidos" class="labelBloqueMovil">Apellidos: </label>
+                        <input type="text" id="apellidos" name="apellidos" class="margenInputMovil" required><br>
                         <br>
                         <label for="email" class="labelBloqueMovil">Email: </label>
-                        <input type="email" id="email" name="email" class="margenInputMovil"><br>
-                        <br>
-                        <label for="telefono" class="labelBloqueMovil">Teléfono: </label>
-                        <input type="tel" id="telefono" name="telefono" class="margenInputMovil"><br>
+                        <input type="email" id="email" name="email" class="margenInputMovil" required><br>
                         <br>
                         <label>Sexo:</label><br>
-                        <label><input name="sexo" type="radio" class="margenInputMovil" value="masculino"> Masculino</label><br>
-                        <label><input name="sexo" type="radio" class="margenInputMovil" value="femenino"> Femenino</label><br>
-                        <label><input name="sexo" type="radio" class="margenInputMovil" value="otro"> Otro</label><br>
+                        <label><input name="sexo" type="radio" class="margenInputMovil" value="masculino" required required> Masculino</label><br>
+                        <label><input name="sexo" type="radio" class="margenInputMovil" value="femenino" required> Femenino</label><br>
+                        <label><input name="sexo" type="radio" class="margenInputMovil" value="otro" required> Otro</label><br>
                         <br>
                         <label>¿Cómo nos ha conocido?</label><br>
-                        <label><input name="conocido" type="checkbox" class="margenInputMovil" value="amigo"> Un amigo</label><br>
-                        <label><input name="conocido" type="checkbox" class="margenInputMovil" value="redes"> Redes sociales</label><br>
-                        <label><input name="conocido" type="checkbox" class="margenInputMovil" value="googleando"> Googleando</label><br>
-                        <label><input name="conocido" type="checkbox" class="margenInputMovil" value="otros"> Otros</label><br>
+                        <label><input name="conocido" type="checkbox" class="margenInputMovil" value="amigo" required> Un amigo</label><br>
+                        <label><input name="conocido" type="checkbox" class="margenInputMovil" value="redes" required> Redes sociales</label><br>
+                        <label><input name="conocido" type="checkbox" class="margenInputMovil" value="googleando" required> Googleando</label><br>
+                        <label><input name="conocido" type="checkbox" class="margenInputMovil" value="otros" required> Otros</label><br>
                         
                         <br>
                         <label for="mensaje">Dinos que opinas sobre el Athletic:</label><br>
