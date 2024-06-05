@@ -279,7 +279,7 @@ footer #copy p {
     .mensaje, .mensaje.show{
         width: 80%;
         margin-top: 90px;
-        margin-bottom: 0px;
+        font-size: 16pt;
     }
     
     footer #info-footer{
@@ -402,8 +402,8 @@ footer #copy p {
     } 
     
     .mensaje, .mensaje.show {
-        width: 40%;
-        margin-bottom: 30px;
+        width: 60%;
+        font-size: 18pt;
     }
     
         
@@ -429,7 +429,7 @@ footer #copy p {
     
     .mensaje, .mensaje.show {
         width: 40%;
-        margin-bottom: 30px;
+        font-size: 20pt;
     }
 
     footer #info-footer {
